@@ -16,3 +16,5 @@ def send_msg(content):
   data = json.dumps({"msgtype": "text", "text": {"content": content, "mentioned_list":["@all"]}})
   r = requests.post(wx_url, data, auth=('Content-Type', 'application/json'))
   print(r.json)
+  
+send_msg(send_message)
