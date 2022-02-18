@@ -8,8 +8,8 @@ new Env('工作报备');
 """
 import requests, json
 
-wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
-send_message = "测试测试测试测试测试测试测试测试测试测试测试"
+wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2af5db49-c10e-4d65-8acd-0aeb038a5502"
+send_message = "报备次日工作~"
 
 
 def send_msg(content):
