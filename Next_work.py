@@ -9,7 +9,7 @@ new Env('工作报备');
 import requests, json
 
 wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
-send_message = "测试：测试机器人1号………………………………！"
+send_message = "测试测试测试测试测试测试测试测试测试测试测试"
 
 
 def send_msg(content):
