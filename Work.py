@@ -9,8 +9,8 @@ new Env('工作任务发布');
 import requests, json
 
 wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
-1 = "南京江北扬子科创三期  科拓  3进3出  南京市浦口区腾飞大厦旁"
-2 = "南京金叶花园  科拓  1进1出  南京市雨花台区龙飞路8号"
+message[0] = "南京江北扬子科创三期  科拓  3进3出  南京市浦口区腾飞大厦旁"
+message[1] = "南京金叶花园  科拓  1进1出  南京市雨花台区龙飞路8号"
 
 
 def send_msg(content):
@@ -18,5 +18,5 @@ def send_msg(content):
   r = requests.post(wx_url, data, auth=('Content-Type', 'application/json'))
   print(r.json)
   
-send_msg(1,2)
+send_msg(message)
 
