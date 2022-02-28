@@ -15,5 +15,7 @@ def send_msg(content):
   r = requests.post(wx_url, data, auth=('Content-Type', 'application/json'))
   print(r.json)
 
-send_msg = "南京江北扬子科创三期  科拓  3进3出  南京市浦口区腾飞大厦旁"
-send_msg = "南京金叶花园  科拓  1进1出  南京市雨花台区龙飞路8号"
+send_message = "南京江北扬子科创三期  科拓  3进3出  南京市浦口区腾飞大厦旁"
+send_msg(send_message)
+send_message = "南京金叶花园  科拓  1进1出  南京市雨花台区龙飞路8号"
+send_msg(send_message)
