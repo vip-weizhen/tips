@@ -13,4 +13,4 @@ def send_msg(content):
   data = json.dumps({"msgtype": "news", "articles": [{"url":"https://tianqiapi.com/api.php?style=tw&skin=pitaya"}]})
   r = requests.post(wx_url, data, auth=('Content-Type', 'application/json'))
   print(r.json)
-send_msg(requests)
+send_msg(print)
