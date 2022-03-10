@@ -7,10 +7,17 @@ cron: 00 7 * * *
 new Env('天气预报');
 """
 
-import requests, json
-wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
-def send_msg(content):
-  data = json.dumps({"msgtype": "news", "articles": [{"url":"https://tianqiapi.com/api.php?style=tw&skin=pitaya"}]})
-  r = requests.post(wx_url, data, auth=('Content-Type', 'application/json'))
-  print(r.json)
-send_msg(print)
+import requests
+
+headers = {
+    'User-Agent': 'Apipost client Runtime/+https://www.apipost.cn/',
+}
+
+params = (
+    ('style', 'tw'),
+    ('skin', 'pitaya"'),
+)
+
+response = requests.get('https://tianqiapi.com/api.php', headers=headers, params=params)
+
+ send("天气预报", res)
