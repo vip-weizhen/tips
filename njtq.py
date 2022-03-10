@@ -19,5 +19,4 @@ params = (
 )
 
 response = requests.get('https://tianqiapi.com/api.php', headers=headers, params=params)
-
- send("天气预报", res)
+send(response)
