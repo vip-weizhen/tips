@@ -22,7 +22,7 @@ def msg(text):
         }
     }
     print(requests.post(webhook,json.dumps(message),headers=headers).content)
-url = "https://tianqi.moji.com/tommorrow/china/jiangsu/yuhuatai-district"    ##要爬取天气预报的网址(china后面是各个省市的地址)
+url = "https://tianqi.moji.com/forecast7/china/jiangsu/yuhuatai-district"    ##要爬取天气预报的网址(china后面是各个省市的地址)
 par = '(<meta name="description" content=")(.*?)(">)' 
  
 opener = urllib.request.build_opener()
