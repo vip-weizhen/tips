@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""
 Author: Mr.wei
 Create type_time: 2022-3-16
 Info: 定期向企业微信推送消息
