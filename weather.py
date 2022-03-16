@@ -15,13 +15,13 @@ import os
  
 headers = {'Content-Type': 'application/json;charset=utf-8'}
 ##拷贝企业微信机器人生成的webhook
-webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
+webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2af5db49-c10e-4d65-8acd-0aeb038a5502"
 def msg(text):
     message= {
      "msgtype": "text",
         "text": {
             "content": text, ##注意后面跟【逗号】
-	    "mentioned_list":[""] ##@群里所有人，可以不加
+	    "mentioned_list":["@all"] ##@群里所有人，可以不加
         },
         "at": {
             "isAtAll": True
