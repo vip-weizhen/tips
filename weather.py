@@ -4,7 +4,7 @@
 Author: Mr.wei
 Create type_time: 2022-3-16
 Info: 定期向企业微信推送消息
-cron: 00 7 * * *
+cron: 20 7 * * *
 new Env('天气预报');
 """
 import requests
