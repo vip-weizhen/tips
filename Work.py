@@ -3,7 +3,7 @@
 Author: Mr.wei
 Create type_time: 2022-4-8
 Info: 定期向企业微信推送消息
-cron: 0 0-23/2 * * *
+cron: 0 0-23/1 * * *
 new Env('待派工任务');
 """
 import requests, json
