@@ -7,7 +7,7 @@ cron: 0 0-23/1 * * *
 new Env('待派工任务');
 """
 import requests, json
-let content = [];
+let content = []
 
 wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37e7e521-28b2-4064-b572-8effb4071d6a"
 
