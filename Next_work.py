@@ -18,3 +18,5 @@ def send_msg(content):
   print(r.json)
   
 send_msg(send_message)
+send_msg(send_message)
+send_msg(send_message)
