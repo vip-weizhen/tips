@@ -18,5 +18,7 @@ def send_msg(content):
   print(r.json)
   
 send_msg(send_message)
+time.sleep(3)
 send_msg(send_message)
+time.sleep(3)
 send_msg(send_message)
