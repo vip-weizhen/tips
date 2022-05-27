@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+import os
+import time
+from telethon import TelegramClient, events, sync
+
+api_id = [15962062]
+api_hash = ['d9c26929adeb728a65e93f4060fd8b3b']
+
+session_name = api_id[:]
+for num in range(len(api_id)):
+	session_name[num] = "id_" + str(session_name[num])
+	client = TelegramClient(session_name[num], api_id[num], api_hash[num])
+	client.start()
+	client.send_message("@suying_bot", '/checkin@suying_bot')
+	time.sleep(5)
+	client.send_read_acknowledge("@suying_bot")
+	print("Done! Session name:", session_name[num])
+	
+os._exit(0)
