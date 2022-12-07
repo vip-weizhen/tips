@@ -22,7 +22,7 @@ def msg(text):
      "msgtype": "text",
         "text": {
             "content": text, ##注意后面跟【逗号】
-	    "mentioned_list":["@all"] ##@群里所有人，可以不加
+	    "mentioned_list":[""] ##@群里所有人，可以不加
         },
         "at": {
             "isAtAll": True
