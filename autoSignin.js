@@ -1,7 +1,5 @@
 /**
- * @name autoSignin.js
- * @author Anonym-w
- * @version 0.1
+ * @name 阿里云盘自动签到
  * cron: 10 7 * * *
  */
 
