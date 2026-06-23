@@ -1,15 +1,4 @@
-/*
- * @Author: lxk0301 https://gitee.com/lxk0301
- * @Date: 2020-08-19 16:12:40
- * @Last Modified by: whyour
- * @Last Modified time: 2021-5-1 15:00:54
- * sendNotify 推送通知功能
- * @param text 通知头
- * @param desp 通知体
- * @param params 某些推送通知方式点击弹窗可跳转, 例：{ url: 'https://abc.com' }
- * @param author 作者仓库等信息  例：`本通知 By：https://github.com/whyour/qinglong`
- */
-//详细说明参考 https://github.com/ccwav/QLScript2.
+
 const querystring = require('querystring');
 const exec = require('child_process').exec;
 const $ = new Env();
@@ -60,7 +49,7 @@ let DD_BOT_SECRET = '';
 // =======================================企业微信机器人通知设置区域===========================================
 //此处填你企业微信机器人的 webhook(详见文档 https://work.weixin.qq.com/api/doc/90000/90136/91770)，例如：693a91f6-7xxx-4bc4-97a0-0ec2sifa5aaa
 //(环境变量名 QYWX_KEY)
-let QYWX_KEY = 'ed9300fc-f7dd-443a-90d5-ab7fa1afa172';
+let QYWX_KEY = '';
 
 // =======================================企业微信应用消息通知设置区域===========================================
 /*
