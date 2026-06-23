@@ -8,7 +8,7 @@ new Env('工作报备');
 """
 import requests, json, time
 
-wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2af5db49-c10e-4d65-8acd-0aeb038a5502"
+wx_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key="
 send_message = "报备次日工作计划~"
 
 
