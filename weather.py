@@ -4,7 +4,7 @@ import requests
 import re
 
 # 替换成你的新webhook地址
-webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=2af5db49-c10e-4d65-8acd-0aeb038a5502"
+webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key="
 
 def send_wechat_msg(content):
     """发送消息到企业微信"""
