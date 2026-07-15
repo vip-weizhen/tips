@@ -8,6 +8,7 @@ new Env('工作报备');
 """
 import requests
 import json
+import time
 from datetime import datetime, timedelta
 
 wx_url = ""
@@ -55,7 +56,7 @@ def generate_warm_message():
         f"⏰ 温馨提示\n\n"
         f"计划还没发的同事别着急，\n"
         f"还有30分钟截止哦~\n"
-        f"记得把明天{ tomorrow}的计划发一下~ 📝",
+        f"记得把明天{tomorrow}的计划发一下~ 📝",
         
         f"☕️ 最后提醒\n\n"
         f"距离截止还有最后10分钟！\n"
